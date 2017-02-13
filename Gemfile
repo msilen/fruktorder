@@ -12,8 +12,12 @@ gem 'jquery-rails'
 gem 'jbuilder', '~> 2.5'
 group :development, :test do
   gem 'byebug', platform: :mri
+  gem 'guard'
+  gem 'guard-rails'
+  gem 'guard-livereload', '~> 2.5', require: false
 end
 group :development do
+  gem 'rack-livereload'
   gem 'web-console', '>= 3.3.0'
   gem 'listen', '~> 3.0.5'
   gem 'spring'
